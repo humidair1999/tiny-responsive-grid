@@ -10,6 +10,14 @@
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
 
+        <link rel="stylesheet" href="css/responsive.gs.12col.css">
+
+        <style>
+            .debug {
+                border: 1px solid red;
+            }
+        </style>
+
         <!--[if lt IE 9]>
             <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
             <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
@@ -20,7 +28,47 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <!-- Markup Example -->
+
+        <div class="container row debug">
+
+            <header role="banner" class="row debug">
+
+                <h1 class="col span_4 debug">Site Title</h1>
+
+                <h2 class="col span_8 debug">Site Description</h2>
+
+                <nav role="navigation" class="row debug">
+
+                    Insert global nav here.
+
+                </nav>
+
+            </header>
+
+            <main role="main" class="row debug">
+
+                <article class="col span_8 clr debug">
+
+                    Insert page content here.
+
+                </article>
+
+                <aside role="complementary" class="col span_4 clr debug">
+
+                    Insert sidebar stuff here.
+
+                </aside>
+
+            </main>
+
+            <footer role="contentinfo" class="row debug">
+
+                Insert footer stuff here.
+
+            </footer>
+
+        </div>
 
         <script src="js/main.js"></script>
     </body>
