@@ -98,7 +98,7 @@
 /*
     desktop columns
 */
-/* 800px */
+/* 1200px */
 @media (min-width: 75em) {
     .container {
         width: 64em; /* 1024px */
