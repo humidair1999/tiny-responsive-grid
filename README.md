@@ -1,20 +1,19 @@
-# tiny-responsive-grid
+# trg
+### tiny responsive grid
 
 Please see the [Github Page](http://jkymarsh.com/tiny-responsive-grid) for documentation.
 
-### project goals
+View source for sample usage.
 
-- small as humanly possible
+#### features
+
+- pretty fuckin' small and simplistic
 - mobile-first
 - support down to IE8
 - no weird hacks or unnecessary fluff
+- (optional) per-device gutters!
 
-### potential features
-
-- gutters?
-- responsive container with edges on mobile
-
-### inspiration
+#### inspiration
 
 - https://github.com/arnaudleray/pocketgrid
 - https://github.com/matthewhartman/base
