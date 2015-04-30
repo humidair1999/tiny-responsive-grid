@@ -3,17 +3,15 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
+        <title>trg - tiny responsive grid</title>
+        <meta name="description" content="a tiny, simple, mobile-first responsive grid that doesn't suck">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="css/trg.css">
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
 
-        <style>
-            .debug {
-                border: 1px solid red;
-            }
-        </style>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/trg.css">
+        <link rel="stylesheet" href="css/main.css">
 
         <!--[if lt IE 9]>
             <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -27,96 +25,115 @@
 
         <!-- Markup Example -->
 
-        <div class="container row debug">
+        <header role="banner" class="container mt-lg mb-xl ta-c debug">
+            <h1 class="mb-0 debug">trg</h1>
 
-            <header role="banner" class="row debug">
+            <h3 class="debug">tiny responsive grid</h3>
 
-                <h1 class="col span_4 debug">Site Title</h1>
+            <a href="https://github.com/jkymarsh/tiny-responsive-grid">view on github</a>
+        </header>
 
-                <h2 class="col span_8 debug">Site Description</h2>
-
-                <!-- <nav role="navigation" class="row debug">
-
-                    Insert global nav here.
-
-                </nav> -->
-
-            </header>
+        <main role="main" class="container debug">
+            <h2 class="debug">Standard usage</h2>
 
             <div class="row debug">
-                <div class="col span-3-t span-5-d debug">
-                    3t, 5d
+                <div class="col span-4-t span-6-d debug">
+                    4 tablet / 6 desktop
                 </div>
 
-                <div class="col span-9-t span-7-d debug">
-                    9t, 7d
+                <div class="col span-8-t span-6-d debug">
+                    8 tablet / 6 desktop
                 </div>
             </div>
 
-            <div class="row gutters-t debug">
-                <div class="col span-8-t span-9-d debug">
-                    8t-g, 9d
+            <div class="row debug">
+                <div class="col span-3-t span-4-d debug">
+                    3 tablet / 4 desktop
+                </div>
+
+                <div class="col span-5-t span-5-d debug">
+                    5 tablet / 5 desktop
                 </div>
 
                 <div class="col span-4-t span-3-d debug">
-                    4t-g, 3d
+                    4 tablet / 3 desktop
+                </div>
+            </div>
+
+            <div class="row debug">
+                <div class="col span-3-t span-9-d debug">
+                    3 tablet / 9 desktop
+                </div>
+
+                <div class="col span-9-t span-3-d debug">
+                    9 tablet / 3 desktop
+                </div>
+            </div>
+
+            <h2 class="mt-lg debug">with gutters</h2>
+
+            <div class="row gutters-t debug">
+                <div class="col span-3-t span-9-d debug">
+                    3g tablet / 9 desktop
+                </div>
+
+                <div class="col span-9-t span-3-d debug">
+                    9g tablet / 3 desktop
                 </div>
             </div>
 
             <div class="row gutters-d debug">
-                <div class="col span-4-t span-6-d debug">
-                    4t, 6d-g
+                <div class="col span-4-t span-7-d debug">
+                    4 tablet / 7g desktop
                 </div>
 
-                <div class="col span-8-t span-6-d debug">
-                    8t, 6d-g
+                <div class="col span-8-t span-5-d debug">
+                    8 tablet / 5g desktop
                 </div>
             </div>
 
             <div class="row gutters-t gutters-d debug">
-                <div class="col span-4-t span-6-d debug">
-                    4t-g, 6d-g
+                <div class="col span-9-t span-3-d debug">
+                    9g tablet / 3g desktop
                 </div>
 
-                <div class="col span-8-t span-6-d debug">
-                    8t-g, 6d-g
+                <div class="col span-3-t span-9-d debug">
+                    3g tablet / 9g desktop
                 </div>
             </div>
+
+            <h2 class="mt-lg debug">nested</h2>
 
             <div class="row debug">
-                <div class="col span-6-d debug">
-                    6d
+                <div class="col span-6-t span-6-d debug">
+                    <div class="row debug">
+                        <div class="col span-9-t span-3-d debug">
+                            9 tablet / 3 desktop
+                        </div>
+
+                        <div class="col span-3-t span-9-d debug">
+                            3 tablet / 9 desktop
+                        </div>
+                    </div>
                 </div>
 
-                <div class="col span-6-d debug">
-                    6d
+                <div class="col span-6-t span-6-d debug">
+                    <div class="row debug">
+                        <div class="col span-4-t span-7-d debug">
+                            4 tablet / 7 desktop
+                        </div>
+
+                        <div class="col span-8-t span-5-d debug">
+                            8 tablet / 5 desktop
+                        </div>
+                    </div>
                 </div>
             </div>
+        </main>
 
-            <main role="main" class="row debug">
+        <footer role="contentinfo" class="container mt-xl ta-c debug">
+            a project by <a href="http://jkymarsh.com">j. ky marsh</a>
+        </footer>
 
-                <article class="col span_8 clr debug">
-
-                    Insert page content here.
-
-                </article>
-
-                <aside role="complementary" class="col span_4 clr debug">
-
-                    Insert sidebar stuff here.
-
-                </aside>
-
-            </main>
-
-            <footer role="contentinfo" class="row debug">
-
-                Insert footer stuff here.
-
-            </footer>
-
-        </div>
-
-        <script src="js/main.js"></script>
     </body>
 </html>
