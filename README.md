@@ -1,9 +1,9 @@
 # trg
 ### tiny responsive grid
 
-Please see the [Github Page](http://jkymarsh.com/tiny-responsive-grid) for documentation.
+please see the [Github Page](http://jkymarsh.com/tiny-responsive-grid) for documentation.
 
-View source for sample usage.
+view source for sample usage.
 
 #### features
 
@@ -11,6 +11,7 @@ View source for sample usage.
 - mobile-first
 - support down to IE8
 - no weird hacks or unnecessary fluff
+- less terrible than most other responsive grids
 - (optional) per-device gutters!
 
 #### inspiration
