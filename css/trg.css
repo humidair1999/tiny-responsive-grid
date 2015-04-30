@@ -1,0 +1,144 @@
+/*
+    trg - tiny responsive grid
+    author: j. ky marsh
+    github: https://github.com/jkymarsh
+    version: 1.0
+*/
+
+/*
+    http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*/
+.container,
+.row,
+.col {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*
+    https://css-tricks.com/snippets/css/clear-fix/
+*/
+.container:after,
+.row:after,
+.col:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*
+    mobile container leaves some whitespace on the sides
+*/
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*
+    set bottom padding if desired
+*/
+.row {
+    padding-bottom: 0;
+}
+
+/*
+    default column styles
+*/
+.col {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+/*
+    tablet columns
+*/
+/* 800px */
+@media (min-width: 50em) {
+    .container {
+        width: 45em; /* 720px */
+    }
+
+    .gutters-t .col {
+        margin-left: 2%;
+    }
+
+    .gutters-t .col:first-child {
+        margin-left: 0;
+    }
+
+    .span-1-t {  width: 8.333%; }
+    .span-2-t {  width: 16.666%; }
+    .span-3-t {  width: 25%; }
+    .span-4-t {  width: 33.333%; }
+    .span-5-t {  width: 41.666%; }
+    .span-6-t {  width: 50%; }
+    .span-7-t {  width: 58.333%; }
+    .span-8-t {  width: 66.666%; }
+    .span-9-t {  width: 75%; }
+    .span-10-t { width: 83.333%; }
+    .span-11-t { width: 91.666%; }
+    .span-12-t { width: 100%; }
+
+    .gutters-t .span-1-t {  width: 6.5%; }
+    .gutters-t .span-2-t {  width: 15%; }
+    .gutters-t .span-3-t {  width: 23.5%; }
+    .gutters-t .span-4-t {  width: 32%; }
+    .gutters-t .span-5-t {  width: 40.5%; }
+    .gutters-t .span-6-t {  width: 49%; }
+    .gutters-t .span-7-t {  width: 57.5%; }
+    .gutters-t .span-8-t {  width: 66%; }
+    .gutters-t .span-9-t {  width: 74.5%; }
+    .gutters-t .span-10-t { width: 83%; }
+    .gutters-t .span-11-t { width: 91.5%; }
+    .gutters-t .span-12-t { width: 100%; }
+}
+
+/*
+    desktop columns
+*/
+/* 1200px */
+@media (min-width: 75em) {
+    .container {
+        width: 64em; /* 1024px */
+    }
+
+    .gutters-t .col {
+        margin-left: 0;
+    }
+
+    .gutters-d .col {
+        margin-left: 2%;
+    }
+
+    .gutters-d .col:first-child {
+        margin-left: 0;
+    }
+
+    .gutters-t .span-1-d, .span-1-d {   width: 8.333%; }
+    .gutters-t .span-2-d, .span-2-d {   width: 16.666%; }
+    .gutters-t .span-3-d, .span-3-d {   width: 25%; }
+    .gutters-t .span-4-d, .span-4-d {   width: 33.333%; }
+    .gutters-t .span-5-d, .span-5-d {   width: 41.666%; }
+    .gutters-t .span-6-d, .span-6-d {   width: 50%; }
+    .gutters-t .span-7-d, .span-7-d {   width: 58.333%; }
+    .gutters-t .span-8-d, .span-8-d {   width: 66.666%; }
+    .gutters-t .span-9-d, .span-9-d {   width: 75%; }
+    .gutters-t .span-10-d, .span-10-d { width: 83.333%; }
+    .gutters-t .span-11-d, .span-11-d { width: 91.666%; }
+    .gutters-t .span-12-d, .span-12-d { width: 100%; }
+
+    .gutters-d .span-1-d {  width: 6.5%; }
+    .gutters-d .span-2-d {  width: 15%; }
+    .gutters-d .span-3-d {  width: 23.5%; }
+    .gutters-d .span-4-d {  width: 32%; }
+    .gutters-d .span-5-d {  width: 40.5%; }
+    .gutters-d .span-6-d {  width: 49%; }
+    .gutters-d .span-7-d {  width: 57.5%; }
+    .gutters-d .span-8-d {  width: 66%; }
+    .gutters-d .span-9-d {  width: 74.5%; }
+    .gutters-d .span-10-d { width: 83%; }
+    .gutters-d .span-11-d { width: 91.5%; }
+    .gutters-d .span-12-d { width: 100%; }
+}
