@@ -1,5 +1,7 @@
 # tiny-responsive-grid
 
+Please see the [Github Page](http://jkymarsh.com/tiny-responsive-grid) for documentation.
+
 ### project goals
 
 - small as humanly possible
